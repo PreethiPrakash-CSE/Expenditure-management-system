@@ -1,0 +1,25 @@
+<div class="div1"></div>
+<div class="container">
+    <div class="div1"></div>
+    <div class="top"><h1>Fill The Form </h1></div>
+    <div class="container1">
+        <form (ngSubmit)="submit()">
+            
+            <div class="form-group">
+                <label>Enter Target Amount<span>*</span></label>
+                <input class="form-control" type="number" name="amount" [(ngModel)]= "amount" placeholder="Ex. 10000" required>
+            </div>
+            <div class="btnn">
+            <button type="submit" class="btn btn-success" style="background-color: #181c86;" >Submit</button>
+        </div>
+        <div>
+            <button (click)="targetMenu()" class="btn btn-success" style="background-color: #181c86;">
+                Target Menu
+            </button>
+        </div>
+        </form>
+    </div>
+
+    
+</div>
+

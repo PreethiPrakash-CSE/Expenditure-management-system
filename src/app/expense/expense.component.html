@@ -1,0 +1,30 @@
+<div class="container">
+    <div class="heading">
+        <h2 style="font-weight: bold;">Select from the Menu</h2>
+    </div>
+
+    <div class="bodyPart">
+        <div class="left">
+            <a routerLink="/addExpense" routerLinkActive="active">
+                <img src="assets\add-exp.png" height="300" width="300">
+            </a>
+            
+        </div>
+        <div class="right">
+            <a routerLink="/viewExpense" routerLinkActive="active">
+                <img src="assets\view-exp.png" height="300" width="300">
+            </a>
+            
+        </div>
+        
+    </div>
+    <div>
+        <button (click)="mainMenu()" class="btn btn-success" style="background-color: #181c86;">
+            return to Main Menu
+        </button>
+    </div>
+</div>
+
+<footer>
+    <div class="foot">@Copyright Preethi-Individual-Project 2022 - All Right Reserved.</div> 
+</footer>

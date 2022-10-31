@@ -1,0 +1,42 @@
+<div class="div1"></div>
+<div class="container">
+    <div class="div1"></div>
+    <div  class="panel panel-primary">
+        <div  class="panel-heading">
+          <h2>Expense List</h2>
+        </div>
+        <div class="panel-body main">
+          <table class="table table-hover table-striped">
+            <thead>
+              <tr>
+                <th>Description</th>
+                <th>category</th>
+                <th>amount</th>
+                
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let exp of expenseDetails | async">
+                <td>{{exp.description}}</td>
+                <td>{{exp.category}}</td>
+                <td>{{exp.amount}}</td>
+                
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="left">
+          <button (click)="deleteExpenses()" class="btn btn-success" style="background-color: #181c86;">
+              Reset Expenses
+          </button>
+      </div>
+
+        <div class="right">
+          <button (click)="expenseMenu()" class="btn btn-success" style="background-color: #181c86;">
+              return to Expense Menu
+          </button>
+      </div>
+      </div>
+   
+</div>

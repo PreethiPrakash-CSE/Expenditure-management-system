@@ -1,0 +1,40 @@
+<div class="div1"></div>
+<div class="container">
+    <div class="div1"></div>
+    <div class="top"><h1>Fill The Form </h1></div>
+    <div class="container1">
+        <form (ngSubmit)="submit()">
+          
+            <div class="form-group" >
+                <label>Expense Description<span>*</span></label>
+                <input class="form-control" placeholder="Ex. House Rent" type="text" name="description" [(ngModel)]= "description" required="true">
+            </div>
+            
+            
+
+            <div class="form-group">
+                <label>category<span>*</span></label>
+                <div class="form-control">
+                  <label class="radio-inline">
+                    <input type="radio" name="category" value="credit" (click)="submittedAns($event)" ngModel>
+                    Credit
+                  </label>
+                  <label class="radio-inline">
+                    <input type="radio" name="category"  value="debit" (click)="submittedAns($event)" ngModel>
+                    Debit
+                  </label>
+                </div>
+              </div>
+            <div class="form-group">
+                <label>Amount<span>*</span></label>
+                <input class="form-control" type="number" name="amount" [(ngModel)]= "amount" placeholder="Ex. 10000" required>
+            </div>
+            <div class="btnn">
+            <button type="submit" class="btn btn-success" style="background-color: #181c86;" >Submit</button>
+        </div>
+        </form>
+        
+    </div>
+    
+</div>
+

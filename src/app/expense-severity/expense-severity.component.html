@@ -1,0 +1,44 @@
+<div class="div1">
+
+</div>
+<div class="div1">
+
+</div>
+<div class="container" >
+    <div class="heading">
+        <h2>Audit Status</h2>
+    </div>
+    
+    <div class="bodyPart">
+        <table class="table">
+            <tbody>
+                
+                <tr>
+                    <td><span>Expense status :</span></td><td [style.color]="severityResponse.expenseStatus"><span>{{severityResponse.expenseStatus}}</span></td>
+                </tr>
+                <tr>
+                    <td><span>Salary :</span></td><td><span>{{severityResponse.salary}}</span></td>
+                </tr>
+                <tr>
+                    <td><span>Spent :</span></td><td><span>{{severityResponse.spent}}</span></td>
+                </tr>
+                <tr>
+                    <td><span>Target amount :</span></td><td><span>{{severityResponse.targetSaving}}</span></td>
+                </tr>
+                <tr>
+                    <td><span>Balance :</span></td><td><span>{{severityResponse.balance}}</span></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div>
+        <button (click)="mainMenu()" class="btn btn-success" style="background-color: #181c86;float: right;">
+            Target Menu
+        </button>
+    </div>
+</div>
+<footer>
+    <div class="foot">@Copyright Preethi-Individual-Project 2022 - All Right Reserved.</div> 
+  </footer>
+
+

@@ -1,0 +1,40 @@
+<div class="container">
+    <div class="heading">
+        <h2 style="font-weight: bold;">Select from the Menu</h2>
+    </div>
+
+    <div class="bodyPart">
+
+        <div class="left">
+            <button (click)="check()" class="btn">
+                <img src="assets\set-target.png" height="300" width="300">
+            </button>
+        </div>
+
+        
+        <div class="right">
+            <a routerLink="/viewTarget" routerLinkActive="active">
+                <img src="assets\view-target.png" height="300" width="300">
+            </a>
+            
+        </div>
+
+        <div class="right">
+            <button (click)="checkUpdateTarget()" class="btn">
+                <img src="assets\update-target.png" height="300" width="300">
+            </button>
+        </div>
+
+                
+        
+    </div>
+    <div>
+        <button (click)="mainMenu()" class="btn btn-success" style="background-color: #181c86;">
+            return to Main Menu
+        </button>
+    </div>
+</div>
+
+<footer>
+    <div class="foot">@Copyright Preethi-Individual-Project 2022 - All Right Reserved.</div> 
+</footer>

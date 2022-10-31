@@ -1,0 +1,73 @@
+.top{
+    text-align: center;
+
+}
+.div1{
+    height: 50px;
+  }
+.container {
+    margin-top: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+    height: 500px;
+    border-radius: 1.8em;
+    background-color: aliceblue;
+}
+.container1{
+    margin-left: 150px;
+    margin-right:10px;
+}
+
+h1{
+    margin-bottom: 25px;
+    margin-left: 15px;
+    font-weight: 500;
+}
+
+span{
+    color: red;
+}
+
+label {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.left {
+    
+    width: 30%;
+    float: left;
+   }
+  
+   
+  
+   .right{
+    float: right;
+    width: 30%;
+   }
+
+.form-control{
+width: 80%;
+color: rgb(38, 50, 56);
+font-size: 14px;
+letter-spacing: 1px;
+background: rgba(136, 126, 126, 0.04);
+padding: 10px 20px;
+border: none;
+border-radius: 10px;
+outline: none;
+box-sizing: border-box;
+border: 2px solid rgba(0, 0, 0, 0.02);
+margin-bottom: 50px;
+margin-bottom: 27px;
+font-family: 'Ubuntu', sans-serif;
+}
+
+.form-control:focus, .pass:focus {
+    border: 2px solid rgba(99, 67, 241, 0.938) !important;
+    
+}
+
+.btnn{
+    text-align: center;
+}
